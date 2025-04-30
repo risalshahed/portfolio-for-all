@@ -1,8 +1,6 @@
 <?php
-// Template for Single Blog Post (single.php)
 get_header();
 ?>
-
 <!-- Breadcrumb Area Start -->
 <div class="breadcrumb-area breadcrumb-bg">
     <div class="container">

@@ -1,8 +1,8 @@
 /*
 Theme Name: Portfolio for All
-Theme URI: https://example.com/
+Theme URI: https://github.com/risalshahed/portfolio-for-all
 Author: Risal Shahed
-Author URI: https://github.com/risalshahed
+Author URI: https://linkedin.com/in/risal-shahed
 Description: A portfolio theme for all
 Version: 1.0
 License: GNU General Public License v2 or later
@@ -14,7 +14,6 @@ body {
   background: #0d0714 !important;
   color: #fff !important;
 }
-
 .tmp-fade-in, .tmp-zoom-in {
   opacity: 1 !important;
 }

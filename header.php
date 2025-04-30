@@ -22,7 +22,6 @@
                             <a href="/">
                                 <img class="logo-dark" src="<?php
                                     $logo_url = get_theme_mod( 'pfa_logo' );
-                                    // functions.php theke, $wp_customize->add_setting( 'pfa_logo', ... ) er sathe match kore ei string dewa hoice
                                     if ( empty( $logo_url ) ) {
                                         echo esc_url( get_stylesheet_directory_uri() . '/assets/images/logo/white-logo-reeni.png' );
                                     } else {

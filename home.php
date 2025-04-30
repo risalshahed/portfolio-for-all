@@ -88,13 +88,6 @@ get_header();
                             </div>
                         </div>
                 <?php endwhile; ?>
-                    <?php
-                    /* echo paginate_links(array(
-                        'total' => $query->max_num_pages,
-                        'prev_text' => '<i class="fa-sharp fa-regular fa-arrow-left"></i>',
-                        'next_text' => '<i class="fa-sharp fa-regular fa-arrow-right"></i>',
-                    )); */
-                    ?>
                 </div>
 
                 <?php

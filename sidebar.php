@@ -1,5 +1,4 @@
 <div class="tmp-sidebar">
-
     <!-- Recent Posts Widget -->
     <div class="signle-side-bar recent-post-area tmponhover">
         <div class="header">
@@ -96,5 +95,4 @@
             </div>
         </div>
     </div>
-
 </div>
