@@ -4,7 +4,7 @@ Theme URI: https://github.com/risalshahed/portfolio-for-all
 Author: Risal Shahed
 Author URI: https://linkedin.com/in/risal-shahed
 Description: A portfolio theme for all
-Version: 1.0
+Version: 1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: pfa
@@ -14,6 +14,18 @@ body {
   background: #0d0714 !important;
   color: #fff !important;
 }
+.social-link > a {
+  text-decoration: none;
+}
 .tmp-fade-in, .tmp-zoom-in {
   opacity: 1 !important;
+}
+.blog-title > a {
+  text-decoration: none;
+}
+.next-btn {
+  text-decoration: none;
+}
+.newsletter-form-1 a {
+  text-decoration: none;
 }

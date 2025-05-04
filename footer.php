@@ -60,8 +60,8 @@
                             <form action="#" class="newsletter-form-1">
                                 <input type="email" placeholder="Your e-mail">
                                 <span>
-                                <a href="#" class="form-icon"><i class="fa-solid fa-arrow-right"></i></a>
-                            </span>
+                                    <a href="#" class="form-icon"><i class="fa-solid fa-arrow-right"></i></a>
+                                </span>
                             </form>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                 <div class="col-lg-12">
                     <div class="main-wrapper tmp-scroll-trigger animation-order-1">
                         <p class="copy-right-para">© themes-park <script>
-                                document.write(new Date().getFullYear())
+                            document.write(new Date().getFullYear())
                             </script> | All Rights Reserved</p>
                         <ul class="tmp-link-animation">
                             <li><a href="#">Trams & Condition</a></li>

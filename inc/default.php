@@ -1,8 +1,6 @@
 <?php
-// Theme Title
 add_theme_support( 'title-tag' );
 
-// Thumbnail Image Area (Feature Image Add korar option, just page r post gulay dbo)
 add_theme_support( 'post-thumbnails', array( 'page', 'post' ) );
 
 // Page Navigation
@@ -19,8 +17,6 @@ function pfa_pagenav() {
     $args['next_text'] = '<i class="fa-sharp fa-regular fa-arrow-right"></i>';
     if ($max > 1) echo
         "<div class='tmp-pagination-button'>";
-            // if ($total == 1 && $max > 1) $pages = "<p class='pages'> Page $current <span>of</span> $max </p>";
-            // echo $pages . paginate_links( $args );
             echo paginate_links( $args );
             if($max > 1) echo 
         '</div>';

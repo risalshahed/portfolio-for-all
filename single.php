@@ -53,9 +53,38 @@ get_header();
                             </div>
 
                             <!-- Post Navigation -->
+                            <!-- Previous post navigation -->
                             <div class="our-portfolio-swiper-btn-wrap">
-                                <div class="nav-previous"><?php previous_post_link('%link', '← Previous Post'); ?></div>
-                                <div class="nav-next"><?php next_post_link('%link', 'Next Post →'); ?></div>
+                                <?php
+                                $prev_post = get_previous_post();
+                                if (!empty($prev_post)) :
+                                ?>
+                                    <a href="<?php echo get_permalink($prev_post->ID); ?>" class="next-btn">
+                                        <div class="tmp-arrow-btn">
+                                            <i class="fa-solid fa-arrow-left"></i>
+                                        </div>
+                                        <div class="btn-content">
+                                            <span class="para">Previous post</span>
+                                            <h4 class="title"><?php echo esc_html(get_the_title($prev_post->ID)); ?></h4>
+                                        </div>
+                                    </a>
+                                <?php endif; ?>
+
+                                <!-- Next post navigation -->
+                                <?php
+                                $next_post = get_next_post();
+                                if (!empty($next_post)) :
+                                ?>
+                                    <a href="<?php echo get_permalink($next_post->ID); ?>" class="next-btn">
+                                        <div class="btn-content">
+                                            <span class="para">Next post</span>
+                                            <h4 class="title"><?php echo esc_html(get_the_title($next_post->ID)); ?></h4>
+                                        </div>
+                                        <div class="tmp-arrow-btn">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                <?php endif; ?>
                             </div>
 
                             <!-- Comments -->

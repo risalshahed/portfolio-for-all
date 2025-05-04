@@ -1,6 +1,5 @@
 <?php
 function pfa_load_style_and_scripts() {
-    // enqueue core theme style
     wp_enqueue_style( 'pfa-style', get_stylesheet_uri() );
     
     // enqueue styles
@@ -22,8 +21,6 @@ function pfa_load_style_and_scripts() {
     wp_register_style( 'pfa-animate', get_template_directory_uri() . '/assets/css/vendor/animate.min.css', array(), '3.7.2', 'all' );
     wp_enqueue_style( 'pfa-animate' );
 
-    // enqueue jQuery
-    // wp_enqueue_script( $handle:string, $src:string, $deps:array, $ver:string|boolean|null, $in_footer:boolean );
     $pfa_theme_js_path = get_template_directory_uri() . '/assets/js/';
 
     // Vendor Scripts

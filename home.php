@@ -25,19 +25,19 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
+                <div class="blog-posts-wrapper">
+                    <?php
+                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                    $args = array(
+                        'post_type' => 'post',
+                        'posts_per_page' => 3,
+                        'paged' => $paged,
+                    );
+                    $query = new WP_Query($args);
 
-                <?php
-                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                $args = array(
-                    'post_type' => 'post',
-                    'posts_per_page' => 3,
-                    'paged' => $paged,
-                );
-                $query = new WP_Query($args);
-
-                if ($query->have_posts()) :
-                    while ($query->have_posts()) : $query->the_post();
-                ?>
+                    if ($query->have_posts()) :
+                        while ($query->have_posts()) : $query->the_post();
+                    ?>
                         <div class="blog-classic-card">
                             <div class="img-box">
                                 <a href="<?php the_permalink(); ?>">
@@ -87,23 +87,22 @@ get_header();
                                 </div>
                             </div>
                         </div>
-                <?php endwhile; ?>
+                    <?php endwhile; ?>
+
+                    <?php
+                    else :
+                        echo '<p>No Posts Found</p>';
+                    endif;
+
+                    wp_reset_postdata();
+                    ?>
+                    <div id="page-nav">
+                        <?php if( 'pfa_pagenav' ) { pfa_pagenav(); } else { ?>
+                        <?php next_posts_link(''); ?>
+                        <?php previous_posts_link(''); ?>
+                        <?php } ?>
+                    </div>
                 </div>
-
-                <?php
-                else :
-                    echo '<p>No Posts Found</p>';
-                endif;
-
-                wp_reset_postdata();
-                ?>
-                <div id="page-nav">
-                    <?php if( 'pfa_pagenav' ) { pfa_pagenav(); } else { ?>
-                    <?php next_posts_link(''); ?>
-                    <?php previous_posts_link(''); ?>
-                    <?php } ?>
-                </div>
-
             </div>
 
             <!-- Sidebar if you want (right column) -->
