@@ -1588,8 +1588,7 @@
                                 <div class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
                                     <span class="subtitle">My Skill</span>
                                 </div>
-                                <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">My Experts
-                                    Areas Where I <br> Gained Skill</h2>
+                                <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">My Experts Areas Where I <br> Gained Skill</h2>
                                 <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">Business consulting
                                     consultants provide expert advice and guida busi
                                     nesses to help them improve their performance, efficiency, and organ izational Business
@@ -1599,7 +1598,7 @@
                     </div>
                     <div class="col-xxl-6 col-lg-12 col-md-12">
                         <div class="my-skill-card-style-two row">
-                            <div class="col-lg-6 col-md-6 col-12">
+                            <div class="col-lg-6 col-md-6 col-12 mt-4">
                                 <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1">
                                     <div class="card-icon">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon-01.png" alt="my-skill-icon">
@@ -1610,7 +1609,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-md-6 col-12">
+                            <div class="col-lg-6 col-md-6 col-12 my-4">
                                 <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-2">
                                     <div class="card-icon">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon-02.png" alt="my-skill-icon">
@@ -1621,7 +1620,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-md-6 col-12">
+                            <div class="col-lg-6 col-md-6 col-12 mb-4">
                                 <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-3">
                                     <div class="card-icon">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon-03.png" alt="my-skill-icon">
@@ -1701,25 +1700,25 @@
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <div class="form-group">
+                                            <div class="form-group  mt-4 mt-lg-0">
                                                 <input class="input-field" id="contact-phone" placeholder="Phone Number" type="number" required>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <div class="form-group">
+                                            <div class="form-group mb-0 mt-4 mb-lg-4">
                                                 <input class="input-field" id="contact-email" name="email" placeholder="Your Email" type="email" required>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <div class="form-group">
+                                            <div class="form-group my-4">
                                                 <input class="input-field" type="text" id="subject" name="subject" placeholder="Subject">
                                             </div>
                                         </div>
 
                                         <div class="col-lg-12">
-                                            <div class="form-group">
+                                            <div class="form-group mb-4">
                                                 <textarea class="input-field" placeholder="Your Message" name="message" id="contact-message" required></textarea>
                                             </div>
                                         </div>
