@@ -4,8 +4,8 @@
         <div class="inner">
             <div class="top-area">
                 <a href="index.html" class="logo">
-                    <img class="logo-dark" src="assets/images/logo/white-logo-risal.png" alt="risal - Personal Portfolio HTML Template for developers and freelancers">
-                    <img class="logo-white" src="assets/images/logo/logo-white.png" alt="risal - Personal Portfolio HTML Template for developers and freelancers">
+                    <img class="logo-dark" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/white-logo-risal.png" alt="risal - Personal Portfolio HTML Template for developers and freelancers">
+                    <img class="logo-white" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo-white.png" alt="risal - Personal Portfolio HTML Template for developers and freelancers">
                 </a>
                 <div class="close-icon-area">
                     <button class="tmp-round-action-btn close_side_menu_active">
@@ -16,7 +16,7 @@
             <div class="content-wrapper">
                 <div class="image-area-feature">
                     <a href="index.html">
-                        <img src="assets/images/logo/man.png" alt="personal-logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/man.png" alt="personal-logo">
                     </a>
                 </div>
                 <h5 class="title mt--30">Freelancer delivering exceptional Webflow, and Next.js solutions.</h5>
@@ -76,8 +76,8 @@
             <div class="header-top">
                 <div class="logo">
                     <a href="index.html" class="logo-area">
-                        <img class="logo-dark" src="assets/images/logo/white-logo-risal.png" alt="risal - Personal Portfolio HTML Template for developers and freelancers">
-                        <img class="logo-white" src="assets/images/logo/logo-white.png" alt="risal - Personal Portfolio HTML Template for developers and freelancers">
+                        <img class="logo-dark" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/white-logo-risal.png" alt="risal - Personal Portfolio HTML Template for developers and freelancers">
+                        <img class="logo-white" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo-white.png" alt="risal - Personal Portfolio HTML Template for developers and freelancers">
                     </a>
 
                 </div>
@@ -221,7 +221,8 @@
                         <div class="progress-wrapper">
                             <div class="content">
                                 <h2 class="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    Design Skill <span><img src="assets/images/custom-line/custom-line.png" alt="custom-line"></span>
+                                    Design Skill <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/custom-line/custom-line.png" alt="custom-line"></span>
+                                    <!-- Design Skill <img src="<?php echo get_template_directory_uri(); ?>/assets/images/brand/01.png" alt="custom-line"> -->
                                 </h2>
                                 <!-- Start Single Progress Charts -->
                                 <div class="progress-charts">
@@ -278,7 +279,7 @@
                         <div class="progress-wrapper">
                             <div class="content">
                                 <h2 class="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    Development Skill <span><img src="assets/images/custom-line/custom-line.png" alt="custom-line"></span>
+                                    Development Skill <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/custom-line/custom-line.png" alt="custom-line"></span>
                                 </h2>
                                 <!-- Start Single Progress Charts -->
                                 <div class="progress-charts">
@@ -396,7 +397,7 @@
 <!-- Tpm Education Experience Area Start -->
 <section class="education-experience tmp-section-gapBottom">
     <div class="container">
-        <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Education <span><img src="assets/images/custom-line/custom-line.png"
+        <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Education <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/custom-line/custom-line.png"
                     alt="custom-line"></span>
         </h2>
         <div class="row g-5">
@@ -434,14 +435,14 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="experiences-wrap-right-content">
-                        <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="assets/images/experiences/expert-img-two.jpg" alt="expert-img">
+                        <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/experiences/expert-img-two.jpg" alt="expert-img">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="experiences-wrap-left-content">
 
                         <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Experiences <span><img
-                        src="assets/images/custom-line/custom-line.png" alt="custom-line"></span></h2>
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/custom-line/custom-line.png" alt="custom-line"></span></h2>
                         <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-1">
                             <p class="ex-subtitle">experience</p>
                             <h2 class="ex-name">Fatima Asrafy</h2>
@@ -464,170 +465,6 @@
     </div>
 </section>
 <!-- Tpm Education Experience Area End -->
-
-
-<section class="our-price-plan-area tmp-section-gapBottom">
-    <div class="container">
-        <div class="section-head mb--60">
-            <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                <span class="subtitle">My Price plan</span>
-            </div>
-            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Enhancing Collaboration
-                <br> between Remote
-            </h2>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-lg-4 col-md-6">
-                <div class="price-plan-card tmponhover blur-style-two tmp-scroll-trigger tmp-fade-in animation-order-1">
-                    <span class="price-sub-title">Starter</span>
-                    <h3 class="main-price">$ 5.00</h3>
-                    <p class="per-month">Per Month</p>
-                    <div class="check-box">
-                        <ul>
-                            <li>
-                                <div class="check-box-item">
-                                    <div class="box-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <p class="box-para">5 Social Media Account</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="check-box-item">
-                                    <div class="box-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <p class="box-para">Free Platform Access</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="check-box-item">
-                                    <div class="box-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <p class="box-para">24/7 Customer Support</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tmp-button-here">
-                        <a class="tmp-btn hover-icon-reverse btn-border btn-md radius-round" href="contact.html">
-                            <span class="icon-reverse-wrapper">
-                <span class="btn-text">Get Started</span>
-                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 tmp-scroll-trigger tmp-fade-in animation-order-2">
-                <div class="price-plan-card tmponhover blur-style-two active">
-                    <span class="price-sub-title">Basic</span>
-                    <h3 class="main-price">$ 230.00</h3>
-                    <p class="per-month">Per Month</p>
-                    <div class="check-box">
-                        <ul>
-                            <li>
-                                <div class="check-box-item">
-                                    <div class="box-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <p class="box-para">5 Social Media Account</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="check-box-item">
-                                    <div class="box-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <p class="box-para">Free Platform Access</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="check-box-item">
-                                    <div class="box-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <p class="box-para">Marketing Platform</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="check-box-item">
-                                    <div class="box-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <p class="box-para">24/7 Customer Support</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="check-box-item">
-                                    <div class="box-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <p class="box-para">Life time support</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tmp-button-here">
-                        <a class="tmp-btn hover-icon-reverse btn-md radius-round" href="contact.html">
-                            <span class="icon-reverse-wrapper">
-                <span class="btn-text">Get Started</span>
-                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="price-plan-card tmponhover blur-style-two tmp-scroll-trigger tmp-fade-in animation-order-3">
-                    <span class="price-sub-title">Premium</span>
-                    <h3 class="main-price">$ 45.00</h3>
-                    <p class="per-month">Per Month</p>
-                    <div class="check-box">
-                        <ul>
-                            <li>
-                                <div class="check-box-item">
-                                    <div class="box-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <p class="box-para">5 Social Media Account</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="check-box-item">
-                                    <div class="box-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <p class="box-para">Free Platform Access</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="check-box-item">
-                                    <div class="box-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <p class="box-para">24/7 Customer Support</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tmp-button-here">
-                        <a class="tmp-btn hover-icon-reverse btn-border btn-md radius-round" href="contact.html">
-                            <span class="icon-reverse-wrapper">
-                <span class="btn-text">Get Started</span>
-                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- Tpm Get In touch start -->
 <section class="get-in-touch-area tmp-section-gapBottom">
@@ -660,25 +497,25 @@
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <div class="form-group">
+                                            <div class="form-group mt-4 mt-lg-0">
                                                 <input class="input-field" id="contact-phone" placeholder="Phone Number" type="number" required>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <div class="form-group">
+                                            <div class="form-group mb-0 mt-4 mb-lg-4">
                                                 <input class="input-field" id="contact-email" name="email" placeholder="Your Email" type="email" required>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <div class="form-group">
+                                            <div class="form-group my-4">
                                                 <input class="input-field" type="text" id="subject" name="subject" placeholder="Subject">
                                             </div>
                                         </div>
 
                                         <div class="col-lg-12">
-                                            <div class="form-group">
+                                            <div class="form-group mb-4">
                                                 <textarea class="input-field" placeholder="Your Message" name="message" id="contact-message" required></textarea>
                                             </div>
                                         </div>

@@ -69,12 +69,14 @@
   --color-gray: #9F9F9F;
   --color-gray-2: #141414;
   --color-subtitle: #f9004d;
+  --custom-bgcolor: #0d0714;
   --background-color-1: #24243557;
   --background-color-2: #13131d;
   --background-color-3: #151521;
   --background-color-4: #242435;
   --background-color-5: #EDF5FF;
   --color-card: #1b1b1c;
+  --footer-background: #141414;
   --gradient-box: linear-gradient(to right, #5237f9, #FF014F);
   --gradient-one: linear-gradient(to right bottom, #E42032, #1273EB);
   --gradient-two: linear-gradient(to right, #ED145B, #4A11EB);
@@ -162,7 +164,7 @@ body {
   font-weight: var(--p-regular);
   position: relative;
   overflow-x: hidden;
-  background: var(--color-secondary);
+  background-color: var(--custom-bgcolor) !important;
 }
 body::before {
   content: "";
@@ -26817,3 +26819,12 @@ body.tmp-white-version.color-primary-3rd .services-widget.v2 .active-bg {
   color: #3d3d3d !important;
 }
 /*# sourceMappingURL=../maps/style.css.map */
+
+
+/* Override HTML Templates! */
+p, span, li, a {
+  color: var(--color-body);
+}
+footer, .copyright-area-one {
+  background: var(--footer-background) !important;
+}

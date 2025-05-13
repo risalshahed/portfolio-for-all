@@ -236,25 +236,25 @@
                                             </div>
 
                                             <div class="col-lg-6">
-                                                <div class="form-group">
+                                                <div class="form-group mt-4 mt-lg-0">
                                                     <input class="input-field" id="contact-phone" placeholder="Phone Number" type="number" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6">
-                                                <div class="form-group">
+                                                <div class="form-group mb-0 mt-4 mb-lg-4">
                                                     <input class="input-field" id="contact-email" name="email" placeholder="Your Email" type="email" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6">
-                                                <div class="form-group">
+                                                <div class="form-group my-4">
                                                     <input class="input-field" type="text" id="subject" name="subject" placeholder="Subject">
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-12">
-                                                <div class="form-group">
+                                                <div class="form-group mb-4">
                                                     <textarea class="input-field" placeholder="Your Message" name="message" id="contact-message" required></textarea>
                                                 </div>
                                             </div>
