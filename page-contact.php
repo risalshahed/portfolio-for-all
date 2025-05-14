@@ -227,7 +227,7 @@
                             <div class="contact-inner">
                                 <div class="contact-form">
                                     <div id="form-messages" class="error"></div>
-                                    <form class="tmp-dynamic-form" id="contact-form" method="POST" action="mailer.php">
+                                    <form class="tmp-dynamic-form" id="contact-form" method="POST" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
                                         <div class="contact-form-wrapper row">
                                             <div class="col-lg-6">
                                                 <div class="form-group">
