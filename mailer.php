@@ -1,52 +1,47 @@
 <?php
-    // Only process POST reqeusts.
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get the form fields and remove whitespace.
-        $name = strip_tags(trim($_POST["name"]));
-		$name = str_replace(array("\r","\n"),array(" "," "),$name);
-        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL); 
-        $subject = trim($_POST["subject"]);
-        $message = trim($_POST["message"]);
+// Load WordPress environment (3 levels up from theme folder)
+require_once( dirname( __FILE__, 3 ) . '/wp-load.php' );
 
-        // Check that data was sent to the mailer.
-        if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            // Set a 400 (bad request) response code and exit.
-            http_response_code(400);
-            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
-            exit;
-        }
+// Check if form is submitted
+if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 
-        // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
-        $recipient = "alaminorko70@gmail.com";
+    // Sanitize form data
+    $name    = sanitize_text_field( $_POST['name'] );
+    $email   = sanitize_email( $_POST['email'] );
+    $subject = sanitize_text_field( $_POST['subject'] );
+    $message = sanitize_textarea_field( $_POST['message'] );
 
-        // Set the email subject.
-        $subject = "New contact from $name";
+    // Set email receiver (site admin email)
+    $to = get_option( 'admin_email' );
 
-        // Build the email content.
-        $email_content = "Name: $name\n";
-        $email_content .= "Email: $email\n";
-        $email_content .= "Subject: $subject\n";
-        $email_content .= "Message:\n$message\n";
+    // Email headers
+    $headers = [
+        'Content-Type: text/html; charset=UTF-8',
+        "Reply-To: $name <$email>"
+    ];
 
-        // Build the email headers.
-        $email_headers = "From: $name <$email>";
+    // Email body
+    $body = "<strong>Name:</strong> $name<br>";
+    $body .= "<strong>Email:</strong> $email<br>";
+    $body .= "<strong>Subject:</strong> $subject<br>";
+    $body .= "<strong>Message:</strong><br>" . nl2br( $message );
 
-        // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
-            // Set a 200 (okay) response code.
-            http_response_code(200);
-            echo "Thank You! Your message has been sent.";
-        } else {
-            // Set a 500 (internal server error) response code.
-            http_response_code(500);
-            echo "Oops! Something went wrong and we couldn't send your message.";
-        }
+    // Send email using wp_mail
+    $mail_sent = wp_mail( $to, $subject, $body, $headers );
 
+    // Return JSON response (for AJAX success message)
+    if ( $mail_sent ) {
+        echo json_encode( [
+            'status'  => 'success',
+            'message' => 'Mail Sent Successfully!'
+        ] );
     } else {
-        // Not a POST request, set a 403 (forbidden) response code.
-        http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
+        echo json_encode( [
+            'status'  => 'error',
+            'message' => 'Failed to send message. Please try again.'
+        ] );
     }
 
+    exit;
+}
 ?>

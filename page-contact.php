@@ -227,7 +227,7 @@
                             <div class="contact-inner">
                                 <div class="contact-form">
                                     <div id="form-messages" class="error"></div>
-                                    <form class="tmp-dynamic-form" id="contact-form" method="POST" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+                                    <form class="tmp-dynamic-form" id="contact-form" method="POST" action="mailer.php">
                                         <div class="contact-form-wrapper row">
                                             <div class="col-lg-6">
                                                 <div class="form-group">
@@ -257,6 +257,10 @@
                                                 <div class="form-group mb-4">
                                                     <textarea class="input-field" placeholder="Your Message" name="message" id="contact-message" required></textarea>
                                                 </div>
+                                            </div>
+
+                                            <div>
+                                                <input type="hidden" name="action" value="send_contact_form">
                                             </div>
 
                                             <div class="col-lg-12">

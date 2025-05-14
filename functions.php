@@ -172,7 +172,7 @@ function handle_contact_form() {
     $mail_sent = wp_mail( $to, "Contact Form: $subject", $email_body, $headers );
 
     if ( $mail_sent ) {
-        echo '<p>Mail Sent Successfully</p>';
+        echo 'Mail Sent Successfully';
         exit;
     } else {
         wp_die( 'Failed to send message. Please try again.' );
