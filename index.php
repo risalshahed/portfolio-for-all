@@ -1691,7 +1691,8 @@
                             </div>
                             <div class="contact-form">
                                 <div id="form-messages" class="error"></div>
-                                <form class="tmp-dynamic-form" id="contact-form" method="POST" action="mailer.php">
+                                <form class="tmp-dynamic-form" id="contact-form" method="POST" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+                                    <input type="hidden" name="action" value="send_contact_form">
                                     <div class="contact-form-wrapper row">
                                         <div class="col-lg-6">
                                             <div class="form-group">
@@ -1700,8 +1701,14 @@
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <div class="form-group  mt-4 mt-lg-0">
-                                                <input class="input-field" id="contact-phone" placeholder="Phone Number" type="number" required>
+                                            <div class="form-group mt-4 mt-lg-0">
+                                                <input
+                                                    class="input-field"
+                                                    id="contact-phone"
+                                                    name="phone"
+                                                    placeholder="Phone Number" type="number"
+                                                    required
+                                                >
                                             </div>
                                         </div>
 

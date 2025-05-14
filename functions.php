@@ -140,3 +140,41 @@ function pfa_mytheme_customize_live_preview() {
 }
 
 add_action( 'customize_preview_init', 'pfa_mytheme_customize_live_preview' );
+
+// Handle form for logged in & non-logged in users
+add_action('admin_post_nopriv_send_contact_form', 'handle_contact_form');
+add_action('admin_post_send_contact_form', 'handle_contact_form');
+
+function handle_contact_form() {
+    // Security check (optional nonce can be added)
+    if ( ! isset( $_POST['email'] ) || ! is_email( $_POST['email'] ) ) {
+        wp_die( 'Invalid form submission.' );
+    }
+
+    // Sanitize inputs
+    $name    = sanitize_text_field( $_POST['name'] );
+    $email   = sanitize_email( $_POST['email'] );
+    $phone   = sanitize_text_field( $_POST['phone'] );
+    $subject = sanitize_text_field( $_POST['subject'] );
+    $message = sanitize_textarea_field( $_POST['message'] );
+
+    // Email body
+    $email_body  = "<strong>Name:</strong> $name<br>";
+    $email_body .= "<strong>Email:</strong> $email<br>";
+    $email_body .= "<strong>Phone:</strong> $phone<br>";
+    $email_body .= "<strong>Subject:</strong> $subject<br>";
+    $email_body .= "<strong>Message:</strong><br>" . nl2br( $message );
+
+    // Send Email
+    $to      = 'your-email@example.com'; // <-- Change to your receiving email
+    $headers = array( 'Content-Type: text/html; charset=UTF-8' );
+
+    $mail_sent = wp_mail( $to, "Contact Form: $subject", $email_body, $headers );
+
+    if ( $mail_sent ) {
+        echo '<p>Mail Sent Successfully</p>';
+        exit;
+    } else {
+        wp_die( 'Failed to send message. Please try again.' );
+    }
+}
