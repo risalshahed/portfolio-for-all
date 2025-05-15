@@ -3,9 +3,9 @@
     <div class="tmp-sidebar-area tmp_side_bar">
         <div class="inner">
             <div class="top-area">
-                <a href="index.html" class="logo">
-                    <img class="logo-dark" src="assets/images/logo/white-logo-risal.png" alt="risal - Personal Portfolio HTML Template for developers and freelancers">
-                    <img class="logo-white" src="assets/images/logo/logo-white.png" alt="risal - Personal Portfolio HTML Template for developers and freelancers">
+                <a href="/" class="logo">
+                    <img class="logo-dark" src="assets/images/logo/white-logo-reeni.png" alt="Reeni - Personal Portfolio HTML Template for developers and freelancers">
+                    <img class="logo-white" src="assets/images/logo/logo-white.png" alt="Reeni - Personal Portfolio HTML Template for developers and freelancers">
                 </a>
                 <div class="close-icon-area">
                     <button class="tmp-round-action-btn close_side_menu_active">
@@ -15,7 +15,7 @@
             </div>
             <div class="content-wrapper">
                 <div class="image-area-feature">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="assets/images/logo/man.png" alt="personal-logo">
                     </a>
                 </div>
@@ -75,7 +75,7 @@
         <div class="inner">
             <div class="header-top">
                 <div class="logo">
-                    <a href="index.html" class="logo-area">
+                    <a href="/" class="logo-area">
                         <img class="logo-dark" src="assets/images/logo/white-logo-risal.png" alt="risal - Personal Portfolio HTML Template for developers and freelancers">
                         <img class="logo-white" src="assets/images/logo/logo-white.png" alt="risal - Personal Portfolio HTML Template for developers and freelancers">
                     </a>
@@ -93,37 +93,18 @@
                     </a>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li class="has-dropdown">
-                    <a href="#">Services
-                        <i class="fa-regular fa-chevron-down"></i>
-                    </a>
-                    <ul class="submenu">
-                        <li><a href="service.html">Service</a></li>
-                        <li><a href="service-details.html">Service Details</a></li>
-                    </ul>
+                    <a href="/about">About</a>
                 </li>
                 <li class="has-dropdown">
                     <a href="#">Blog
                         <i class="fa-regular fa-chevron-down"></i>
                     </a>
                     <ul class="submenu">
-                        <li><a href="blog.html">Blog Classic</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li class="has-dropdown">
-                    <a href="#">Project
-                        <i class="fa-regular fa-chevron-down"></i>
-                    </a>
-                    <ul class="submenu">
-                        <li><a href="project.html">Project</a></li>
-                        <li><a href="project-details.html">Project Details</a></li>
+                        <li><a href="/blog">Blog</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="/contact">Contact</a>
                 </li>
             </ul>
 
@@ -227,7 +208,7 @@
                             <div class="contact-inner">
                                 <div class="contact-form">
                                     <div id="form-messages" class="error"></div>
-                                    <form class="tmp-dynamic-form" id="contact-form" method="POST" action="mailer.php">
+                                    <form class="tmp-dynamic-form" id="contact-form" method="POST" action="">
                                         <div class="contact-form-wrapper row">
                                             <div class="col-lg-6">
                                                 <div class="form-group">

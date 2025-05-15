@@ -93,37 +93,18 @@
                       </a>
                   </li>
                   <li>
-                      <a href="about.html">About</a>
-                  </li>
-                  <li class="has-dropdown">
-                      <a href="#">Services
-                          <i class="fa-regular fa-chevron-down"></i>
-                      </a>
-                      <ul class="submenu">
-                          <li><a href="service.html">Service</a></li>
-                          <li><a href="service-details.html">Service Details</a></li>
-                      </ul>
+                      <a href="/about">About</a>
                   </li>
                   <li class="has-dropdown">
                       <a href="#">Blog
                           <i class="fa-regular fa-chevron-down"></i>
                       </a>
                       <ul class="submenu">
-                          <li><a href="blog.html">Blog Classic</a></li>
-                          <li><a href="blog-details.html">Blog Details</a></li>
-                      </ul>
-                  </li>
-                  <li class="has-dropdown">
-                      <a href="#">Project
-                          <i class="fa-regular fa-chevron-down"></i>
-                      </a>
-                      <ul class="submenu">
-                          <li><a href="project.html">Project</a></li>
-                          <li><a href="project-details.html">Project Details</a></li>
+                          <li><a href="/blog">Blog</a></li>
                       </ul>
                   </li>
                   <li>
-                      <a href="contact.html">Contact</a>
+                      <a href="/contact">Contact</a>
                   </li>
               </ul>
 
@@ -312,7 +293,7 @@
 
                         </div>
                         <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
-                            <a class="tmp-btn hover-icon-reverse radius-round" href="about.html">
+                            <a class="tmp-btn hover-icon-reverse radius-round" href="/about">
                                 <span class="icon-reverse-wrapper">
                         <span class="btn-text">Read More About Me</span>
                                 <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -585,7 +566,7 @@
                                             </div>
                                         </div>
 
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -623,7 +604,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -661,7 +642,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -696,7 +677,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -735,7 +716,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -773,7 +754,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -811,7 +792,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -846,7 +827,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -885,7 +866,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -923,7 +904,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -961,7 +942,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -996,7 +977,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -1035,7 +1016,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -1073,7 +1054,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -1111,7 +1092,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -1146,7 +1127,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -1185,7 +1166,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -1223,7 +1204,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -1262,7 +1243,7 @@
                                             </div>
                                         </div>
 
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -1297,7 +1278,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="portfolio-details.html">
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
                                             <span class="icon-reverse-wrapper">
                                     <span class="btn-text">View design</span>
                                             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -1691,7 +1672,7 @@
                             </div>
                             <div class="contact-form">
                                 <div id="form-messages" class="error"></div>
-                                <form class="tmp-dynamic-form" id="contact-form" method="POST" action="mailer.php">
+                                <form class="tmp-dynamic-form" id="contact-form" method="POST" action="">
                                     <div class="contact-form-wrapper row">
                                         <div class="col-lg-6">
                                             <div class="form-group">
@@ -1829,50 +1810,8 @@
                     echo '<p>No posts found.</p>';
                 endif;
                 ?>
-                <!--
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="blog-card-style-two tmponhover image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
-                        <div class="blog-card-img">
-                            <div class="img-box">
-                                <a href="blog-details.html">
-                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/blog-img-1.jpg" alt="Blog Thumbnail">
-                                </a>
-                            </div>
-                            <span>12 Feb</span>
-                        </div>
-                        <div class="blog-content-wrap">
-                            <div class="blog-tags">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fa-regular fa-user"></i>Mesbah</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa-regular fa-comments"></i>Comments (05)</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="blog-title"><a href="blog-details.html">Inspiring the World, One Project at a
-                                    Time for the
-                                    man</a></h3>
-
-                            <div class="read-more-btn">
-                                <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="blog-details.html">
-                                    <span class="icon-reverse-wrapper">
-                                    <span class="btn-text">Read More</span>
-                                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                -->
             </div>
         </div>
     </section>
     <!-- Tpm Blog and news Area End -->
 <?php get_footer(); ?>
-
-<script src="<?php echo get_template_directory_uri(); ?>/js/ajax-contact.js"></script>
