@@ -10,7 +10,7 @@
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/md-yusuf-logo.png" alt="Md Yusuf">
                             </a>
                         </div>
-                        <p class="description">Md Yusuf aka Marketer Yusuf - is the best brand marketer in Bangladesh with 15+ years of experience.</p>
+                        <p class="description">Md Yusuf aka Marketer Yusuf - is the best brand marketer in Bangladesh with 11+ years of experience.</p>
                         <div class="social-link footer">
                             <a target="_blank" href="https://www.facebook.com/marketeryusufprofile"><i class="fa-brands fa-facebook-f"></i></a>
 							<a target="_blank" href="https://www.facebook.com/marketeryusuf"><i class="fa-brands fa-facebook-f"></i></a>

@@ -100,13 +100,8 @@
                 <li>
                     <a href="/about">About</a>
                 </li>
-                <li class="has-dropdown">
-                    <a href="#">Blog
-                        <i class="fa-regular fa-chevron-down"></i>
-                    </a>
-                    <ul class="submenu">
-                        <li><a href="/blog">Blog</a></li>
-                    </ul>
+                <li>
+                    <a href="/blog">Blog</a>
                 </li>
                 <li>
                     <a href="/contact">Contact</a>

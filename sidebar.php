@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <p class="about-me-para">
-                    Aliquam eros justo, posuere loborti viverra ullamcorper posuere viverra. Aliquam eros justo, posuere justo, posuere.
+                    Md. Yusuf aka Marketer Yusuf is the best brand strategist crafting research-backed branding and growth-driven campaigns.
                 </p>
             </div>
         </div>

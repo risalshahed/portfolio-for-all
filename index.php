@@ -99,13 +99,8 @@
                   <li>
                       <a href="/about">About</a>
                   </li>
-                  <li class="has-dropdown">
-                      <a href="#">Blog
-                          <i class="fa-regular fa-chevron-down"></i>
-                      </a>
-                      <ul class="submenu">
-                          <li><a href="/blog">Blog</a></li>
-                      </ul>
+                  <li>
+                    <a href="/blog">Blog</a>
                   </li>
                   <li>
                       <a href="/contact">Contact</a>
@@ -155,7 +150,7 @@
                                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/building-brand since-2014.png" alt="building-brand-since-2014">
                                   </div>
                                   <div class="logo-under-img-2">
-                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/inner image.png" alt="md-yusuf">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/brand-inner.png" alt="md-yusuf">
                                   </div>
                               </div>
 
@@ -925,7 +920,7 @@
     <!-- Tpm Get In touch End -->
 
     <!-- Tpm Blog and news Area Start -->
-    <section class="blog-and-news-are tmp-section-gap">
+    <section class="blog-and-news-area tmp-section-gap">
         <div class="container">
             <div class="section-head mb--50">
                 <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
