@@ -141,40 +141,94 @@ function pfa_mytheme_customize_live_preview() {
 
 add_action( 'customize_preview_init', 'pfa_mytheme_customize_live_preview' );
 
-// Handle form for logged in & non-logged in users
-add_action('admin_post_nopriv_send_contact_form', 'handle_contact_form');
-add_action('admin_post_send_contact_form', 'handle_contact_form');
+/* -------------------------------
+Dynamic Experience Year Calculator
+------------------------------- */
+function pfa_get_experience_in_years() {
+    $base_year = 2014;
+    $base_experience = 0;
 
-function handle_contact_form() {
-    // Security check (optional nonce can be added)
-    if ( ! isset( $_POST['email'] ) || ! is_email( $_POST['email'] ) ) {
-        wp_die( 'Invalid form submission.' );
+    // আজকের তারিখ ও 8th March
+    $current_year = date('Y');
+    $today = strtotime(date('Y-m-d'));
+    $target_date = strtotime("$current_year-03-08");
+
+    // কয় বছর পার হয়েছে তা হিসাব করো
+    $years_passed = $current_year - $base_year;
+
+    // যদি আজ 8 March বা তার পরে হয়, তাহলে +1 করো
+    if ($today >= $target_date) {
+        $years_passed += 1;
     }
 
-    // Sanitize inputs
-    $name    = sanitize_text_field( $_POST['name'] );
-    $email   = sanitize_email( $_POST['email'] );
-    $phone   = sanitize_text_field( $_POST['phone'] );
-    $subject = sanitize_text_field( $_POST['subject'] );
-    $message = sanitize_textarea_field( $_POST['message'] );
+    // Final experience হিসাব করো
+    $total_experience = $base_experience + $years_passed;
 
-    // Email body
-    $email_body  = "<strong>Name:</strong> $name<br>";
-    $email_body .= "<strong>Email:</strong> $email<br>";
-    $email_body .= "<strong>Phone:</strong> $phone<br>";
-    $email_body .= "<strong>Subject:</strong> $subject<br>";
-    $email_body .= "<strong>Message:</strong><br>" . nl2br( $message );
+    return $total_experience;
+}
+
+
+/* ===============================
+HANDLE CONTACT FORM SUBMISSION
+=============================== */
+function pfa_handle_form_submit() {
+    ob_start(); // prevent accidental output
+
+    // Sanitize incoming fields
+    $name    = sanitize_text_field($_POST['name'] ?? '');
+    $phone   = sanitize_text_field($_POST['phone'] ?? '');
+    $email   = sanitize_email($_POST['email'] ?? '');
+    $subject = sanitize_text_field($_POST['subject'] ?? '');
+    $message = sanitize_textarea_field($_POST['message'] ?? '');
+
+    // =======================
+    // EMAIL RECEIVER (EDIT THIS)
+    // =======================
+    $to = "brand@marketeryusuf.com"; 
+    // TODO: Replace with your real domain email
+
+    $headers = [
+        "From: Your Website <brand@marketeryusuf.com>",
+        "Reply-To: $email"
+    ];
+
+    $email_subject = $subject ?: "New Contact Form Submission";
+
+    wp_mail($to, $email_subject, $email_body, $headers);
+
+    // build safe redirect
+    $redirect_url = remove_query_arg('form_status', wp_get_referer());
+    $redirect_url = add_query_arg('form_status', 'success', $redirect_url);
+
+    ob_end_clean(); // clear accidental echoes
+
+    wp_safe_redirect($redirect_url);
+    exit;
+
+    // Build Email Subject & Body
+    /* $email_subject = !empty($subject) ? $subject : "New Contact Form Submission";
+    $email_body  = "Name: $name\n";
+    $email_body .= "Phone: $phone\n";
+    $email_body .= "Email: $email\n";
+    $email_body .= "Message:\n$message\n";
+
+    // Headers
+    $headers = [
+        "From: Your Website <brand@marketeryusuf.com>",  // EDIT THIS if needed
+        "Reply-To: $email"
+    ];
 
     // Send Email
-    $to      = 'your-email@example.com'; // <-- Change to your receiving email
-    $headers = array( 'Content-Type: text/html; charset=UTF-8' );
+    wp_mail($to, $email_subject, $email_body, $headers);
 
-    $mail_sent = wp_mail( $to, "Contact Form: $subject", $email_body, $headers );
+    // =======================
+    // REDIRECT WITH SUCCESS FLAG
+    // =======================
+    $redirect_url = wp_get_referer() . "?form_status=success";
 
-    if ( $mail_sent ) {
-        echo 'Mail Sent Successfully';
-        exit;
-    } else {
-        wp_die( 'Failed to send message. Please try again.' );
-    }
+    wp_redirect($redirect_url);
+    exit; */
 }
+
+add_action('admin_post_nopriv_send_contact_form', 'pfa_handle_form_submit');
+add_action('admin_post_send_contact_form', 'pfa_handle_form_submit');

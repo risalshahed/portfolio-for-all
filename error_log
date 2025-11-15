@@ -1,4 +1,0 @@
-[17-May-2025 04:02:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/ricaeqep/mahfuz.website/wp-content/themes/portfolio-for-all-main/index.php:1
-Stack trace:
-#0 {main}
-  thrown in /home/ricaeqep/mahfuz.website/wp-content/themes/portfolio-for-all-main/index.php on line 1

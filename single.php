@@ -1,6 +1,5 @@
-<?php
-get_header();
-?>
+<?php get_header(); ?>
+<?php get_template_part('header-dropdown'); ?>
 <!-- Breadcrumb Area Start -->
 <div class="breadcrumb-area breadcrumb-bg">
     <div class="container">
